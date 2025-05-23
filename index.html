@@ -70,21 +70,23 @@
   background-size: cover;
   background-position: center center;
   color: white;
-  padding: 60px 20px; /* adjust as needed */
+  padding: 20px 20px; /* adjust as needed */
 }
 
 /* Desktop scaling */
-@media (min-width: 768px) {
+@media (min-width: 766px) {
   .hero {
-    background-size: 80%; /* zoom in slightly */
+	height: 85vh;
+
+    background-size: 100%; /* zoom in slightly */
   }
 }
 
 /* Mobile scaling */
-@media (max-width: 767px) {
+@media (max-width: 700px) {
   .hero {
-	height: 65vh;
-    background-size: 180%; /* natural size */
+	height: 85vh;
+    background-size: 185%; /* natural size */
   }
 }
 
@@ -103,7 +105,7 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      padding: 1em 1em 6em;
+      padding: 0em 0em 0em;
       text-align: center;
     }
 
@@ -224,6 +226,31 @@
         align-items: center;
       }
     }
+.hero {
+  position: relative;
+  background: url('images/hero-bg.jpg') no-repeat top center;
+  background-size: cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero-logo img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
   </style>
 </head>
 <body>
@@ -234,6 +261,9 @@
   </header>
 
   <section class="hero">
+<div class="hero-logo">
+    <img src="images/delta-logo-hero.png" alt="Delta Airlines Logo" />
+  </div>
     <div class="hero-content">
       <h1>Discounted Airfare for Seniors 50+</h1>
       <p>Save up to 50% — Speak with a live agent now</p>
