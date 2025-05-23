@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delta Airlines - Senior Flight Savings</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+	.call-banner-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* Optional: change based on your theme */
+  text-align: center;
+}
+
+.ad-banner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ad-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ad-banner img:hover {
+  transform: scale(1.02);
+}
+
+
+    header {
+      background: #fff;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header a {
+      background: #c8102e;
+      color: white;
+      padding: 0.75em 1.5em;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+.hero {
+  position: relative;
+  background: url('images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 60px 20px; /* adjust as needed */
+}
+
+/* Desktop scaling */
+@media (min-width: 768px) {
+  .hero {
+    background-size: 80%; /* zoom in slightly */
+  }
+}
+
+/* Mobile scaling */
+@media (max-width: 767px) {
+  .hero {
+	height: 65vh;
+    background-size: 180%; /* natural size */
+  }
+}
+
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 1em 1em 6em;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+
+    .cta-button {
+      background: #c8102e;
+      color: white;
+      padding: 1em 2em;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 1.5em;
+    }
+
+    .usp-box {
+      background-color: rgba(0,0,0,0.3);
+      display: inline-block;
+      padding: 1em 1.5em;
+      border-radius: 8px;
+      font-size: 1.1em;
+    }
+
+    .section {
+      padding: 4em 2em;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+      color: #002d72;
+    }
+
+    .routes, .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .route-box, .testimonial-box {
+      background: #f8f9fa;
+      padding: 1.2em;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      cursor: pointer;
+    }
+
+    .route-box:hover, .testimonial-box:hover {
+      background: #e9ecef;
+    }
+
+    .route-box a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+    }
+
+    .route-box::before {
+      content: "✅ ";
+    }
+
+    footer {
+      text-align: center;
+      background: #f5f5f5;
+      padding: 2em 1em;
+      font-size: 0.9em;
+      color: #444;
+    }
+
+    .floating-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #c8102e;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1em;
+      z-index: 10;
+    }
+
+    .floating-cta a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8em;
+      }
+
+      .hero p, .cta-button, .usp-box {
+        font-size: 1em;
+      }
+
+      .routes, .testimonials {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/delta-logo.png" alt="Delta Logo">
+    <a href="tel:+18886544380">+1(888) 654-4380</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discounted Airfare for Seniors 50+</h1>
+      <p>Save up to 50% — Speak with a live agent now</p>
+      <a href="tel:+18886544380" class="cta-button">Call +1(888) 654-4380</a>
+      <div class="usp-box">
+        <strong>✅ No Hold Time</strong><br>
+        Speak directly to an agent
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why Book by Phone?</h2>
+    <ul style="max-width: 600px; margin: 0 auto; list-style: none; padding: 0; text-align: left;">
+      <li>✅ No Hold Time – Get straight to an agent</li>
+      <li>✅ 24/7 Live Assistance</li>
+      <li>✅ Senior-Friendly Booking Support</li>
+      <li>✅ Exclusive Phone-Only Discounts</li>
+    </ul>
+  </section>
+
+<section class="call-banner-section">
+  <div class="ad-banner">
+    <a href="tel:+18886544380">
+      <img src="images/delta-senior-ad.jpg" alt="Discounted Delta Airfare for Seniors 50+" />
+    </a>
+  </div>
+</section>
+
+  <section class="section">
+    <h2>Popular Routes with Exclusive Phone-Only Savings</h2>
+    <div class="routes">
+      <div class="route-box"><a href="tel:+18886544380">New York → Los Angeles – Save up to 20%</a></div>
+      <div class="route-box"><a href="tel:+18886544380">Chicago → Miami – Save up to 18%</a></div>
+      <div class="route-box"><a href="tel:+18886544380">Atlanta → Seattle – Save up to 15%</a></div>
+      <div class="route-box"><a href="tel:+18886544380">Dallas → Boston – Save up to 20%</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What Our Travelers Say</h2>
+    <div class="testimonials">
+      <div class="testimonial-box">“I was amazed by the phone support! I saved hundreds and got personal help for my travel dates.” – Janet T., 67</div>
+      <div class="testimonial-box">“Booking by phone with Delta made it so easy. No confusing websites, just real help.” – Michael R., 72</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>About Delta Airlines</h2>
+    <p style="max-width: 700px; margin: 0 auto;">Delta Airlines is one of the most trusted names in air travel, serving over 300 destinations across the globe. With a reputation for comfort, service, and reliability, Delta ensures your travel experience is smooth from booking to arrival.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Delta Fare Support. All rights reserved.<br>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+
+  <div class="floating-cta">
+    <a href="tel:+18886544380">📞 Tap to Call +1(888) 654-4380</a>
+  </div>
+
+</body>
+</html>
